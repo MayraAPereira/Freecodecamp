@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pesquisa sobre Séries</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="contaner">
+      <h1 id="title">
+        Formulário de pesquisa sobre séries
+      </h1>
+      <p id="description" >Queremos saber qual série é legal</p>
+    </div>
+    <form id="survey-form">
+      <div>
+      <label id="name-label">Nome <input class="cadastro" id="name"  name="name" type="text" placeholder="Digite seu nome" required /></label>
+      <label id="email-label">E-mail <input class="cadastro" id="email" name="email" type="email" placeholder="Digite seu e-mail" required /></label>
+      <label id="number-label">Idade <input class="cadastro" id="number" name="number" type="number" min="16" max="120" placeholder="Coloque sua idade" required  /></label>
+      </div>
+      <div>
+        <p class="paragrafo2">Você curte séries?</p>
+      <select class="opcoes" id="dropdown" >
+        <option value=""></option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+      </select>
+      </div>
+      <div class="frequeciaAssite">
+        <p class="paragrafo2">Com qual frequencia você assiste séries?</p>
+      <label for="1vez"><input id="1vez" name="frequencia" type="radio" value="1" /> 1 ou 2 vez na semana</label>
+      <label for="2vezes"><input id="2vezes" name="frequencia" type="radio" value="2" /> 2 ou 3 vez na semana</label>
+      <label for="3"><input id="3vezes" name="frequencia" type="radio" value="3" /> 3 ou 4 vez na semana </label>
+      <label for="sempre"><input id="Sempre" name="frequencia" type="radio" value="semp" /> Sempre</label>
+      </div>
+      <div>
+        <p class="paragrafo2">Qual genero é o teu favorito?</p>
+      <label><input name="preferencia" type="checkbox" value="Romance"/> Romance</label>
+      <label><input name="preferencia" type="checkbox" value="Comédio"/> Comédio</label>
+      <label><input name="preferencia" type="checkbox" value="Suspence"/> Suspence</label>
+      <label><input name="preferencia" type="checkbox" value="Terror"/> Terror</label>
+      <label><input name="preferencia" type="checkbox" value="Outros"/> Documentario</label>
+      <p class="paragrafoFinal">Outros genêros</p>
+      <textarea placeholder="Escreva aqui!" rows="4" cols="30"></textarea>
+      </div>
+      <div>
+        <button class="button" id="submit" type="submit">Enviar</button>
+      </div>
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #011F26;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+.contaner {
+  text-align: center;
+  margin: 1rem auto;
+  color: #F2668B;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  color: #F2668B;
+}
+
+div {
+  border: none;
+  padding: 1rem 0;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input[type="radio"] {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="checkbox"] {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+  
+}
+
+.button {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #05F2F2;
+  border-color: white;
+  min-width: 300px;
+
+}
+
+p {
+  font-size: 20px;
+}
